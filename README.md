@@ -95,16 +95,69 @@ cd ipl-cricket-prediction
 
 The accuracy of the model on the test set is calculated and displayed, giving insights into its predictive performance. A function is included to visualize the match progression graphically.
 
-## Contributing :
+## STREAMLIT APP :-
 
-Contributions are encouraged! If you wish to enhance the project, fix bugs, or introduce new features, feel free to submit a pull request. For significant changes, start by opening an issue to discuss your ideas.
+  ![App Screenshot](r"C:\Users\saura\Downloads\Movie_recommender_system-(UI)_2.png")
 
-## License :
 
-This project is released under the MIT License.
+This repository contains the code for a Streamlit app that predicts the probability of winning an Indian Premier League (IPL) cricket match using machine learning. The app takes input such as the batting and bowling teams, host city, target score, current score, overs completed, and wickets fallen, and provides a prediction of the winning probabilities for the batting and bowling teams.
 
-Feel free to personalize and adapt this README according to your project's specifics. By explaining the algorithm and the project's core steps, potential users and contributors will gain a deeper understanding of your work. Replace placeholders, such as "your-username," with your actual GitHub username and modify paths or instructions as needed.
+## Getting Started
 
-## Acknowledgments
+To run the app locally, follow these steps:
 
-- This project is inspired by the excitement of IPL cricket and the desire to explore machine learning in sports analytics.
+1. Clone this repository to your local machine.
+   
+   
+   git clone https://github.com/your-username/ipl-win-predictor.git
+   
+
+2. Navigate to the project directory.
+   
+   
+   cd ipl-win-predictor
+   
+
+3. Create a virtual environment (optional but recommended).
+   
+   
+   python -m venv venv
+   source venv/bin/activate
+   
+
+4. Install the required dependencies.
+   
+   
+   pip install -r requirements.txt
+   
+
+5. Run the Streamlit app.
+   
+   
+   streamlit run app.py
+   
+
+6. Access the app in your web browser by visiting `http://localhost:8501`.
+
+## Usage
+
+1. Select the batting and bowling teams from the dropdown menus.
+2. Choose the host city from the available options.
+3. Enter the target score and your team's current score, overs completed, and wickets fallen.
+4. Click the "Predict Probability" button to get the predicted winning probabilities for both teams.
+
+## Model and Data
+
+The prediction is made using a machine learning model trained on historical IPL match data. The model is stored in a pickle file `pipe.pkl` and is loaded into the app for predictions.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to enhance the app, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to customize the content according to your preferences and the specifics of your project. Make sure to replace placeholders like `your-username` with your actual GitHub username. Also, consider adding sections like "References" or "Acknowledgments" if necessary.
